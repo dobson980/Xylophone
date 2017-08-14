@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		357288631F3EA94400C071AD /* XylophonePlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 357288621F3EA94400C071AD /* XylophonePlayer.swift */; };
 		357288651F3EAE2800C071AD /* xylophone.swift in Sources */ = {isa = PBXBuildFile; fileRef = 357288641F3EAE2800C071AD /* xylophone.swift */; };
+		357F70BE1F3F5E1200E0264C /* panView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 357F70BD1F3F5E1200E0264C /* panView.swift */; };
 		63C019C91C58DF76001F4187 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C019C81C58DF76001F4187 /* AppDelegate.swift */; };
 		63C019CB1C58DF76001F4187 /*  VIewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C019CA1C58DF76001F4187 /*  VIewController.swift */; };
 		63C019CE1C58DF76001F4187 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63C019CC1C58DF76001F4187 /* Main.storyboard */; };
@@ -26,6 +27,7 @@
 /* Begin PBXFileReference section */
 		357288621F3EA94400C071AD /* XylophonePlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XylophonePlayer.swift; sourceTree = "<group>"; };
 		357288641F3EAE2800C071AD /* xylophone.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = xylophone.swift; sourceTree = "<group>"; };
+		357F70BD1F3F5E1200E0264C /* panView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = panView.swift; sourceTree = "<group>"; };
 		63C019C51C58DF76001F4187 /* Xylophone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Xylophone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63C019C81C58DF76001F4187 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		63C019CA1C58DF76001F4187 /*  VIewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = " VIewController.swift"; sourceTree = "<group>"; };
@@ -88,6 +90,7 @@
 			children = (
 				63C019C81C58DF76001F4187 /* AppDelegate.swift */,
 				63C019CA1C58DF76001F4187 /*  VIewController.swift */,
+				357F70BD1F3F5E1200E0264C /* panView.swift */,
 				357288641F3EAE2800C071AD /* xylophone.swift */,
 				357288621F3EA94400C071AD /* XylophonePlayer.swift */,
 				63C019CC1C58DF76001F4187 /* Main.storyboard */,
@@ -179,6 +182,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				357F70BE1F3F5E1200E0264C /* panView.swift in Sources */,
 				357288651F3EAE2800C071AD /* xylophone.swift in Sources */,
 				63C019CB1C58DF76001F4187 /*  VIewController.swift in Sources */,
 				357288631F3EA94400C071AD /* XylophonePlayer.swift in Sources */,

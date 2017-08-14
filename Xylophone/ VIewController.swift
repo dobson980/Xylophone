@@ -11,20 +11,28 @@ import UIKit
 
 class ViewController: UIViewController{
     
+    @IBOutlet var xylophoneKeys: [UIButton]!
+    
     var xylophonePlayers = [XylophonePlayer]()
     let xylophone = Xylophone()
-
+    var lastActiveKey = "0"
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         prepareKeySounds()
         
+        let pan = UIPanGestureRecognizer(target: self, action: #selector(panOverKey))
+        self.view.addGestureRecognizer(pan)
+        
     }
+    
 
     @IBAction func notePressed(_ sender: UIButton) {
-        
+
         xylophonePlayers[sender.tag - 1].play()
-        
+        print("played sound for \(sender.tag)")
+
     }
     
     func prepareKeySounds() {
@@ -41,5 +49,7 @@ class ViewController: UIViewController{
             
         }
     }
+
+    
 }
 

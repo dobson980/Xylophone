@@ -24,8 +24,10 @@
                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0nu-A8-mkT" userLabel="Key1">
                                 <rect key="frame" x="5" y="28" width="365" height="84"/>
                                 <color key="backgroundColor" red="0.90588235294117647" green="0.29803921568627451" blue="0.23529411764705882" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <gestureRecognizers/>
                                 <connections>
                                     <action selector="notePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IoY-Re-7Er"/>
+                                    <outletCollection property="gestureRecognizers" destination="NRS-ih-LwH" appends="YES" id="FxZ-UP-oq2"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4YE-I3-mym" userLabel="Key2">
@@ -103,8 +105,18 @@
                             <constraint firstItem="jEL-en-4rE" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="30" id="txB-gT-hOH"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outletCollection property="xylophoneKeys" destination="cmn-i5-Ti5" collectionClass="NSMutableArray" id="Ec9-4e-QJW"/>
+                        <outletCollection property="xylophoneKeys" destination="jEL-en-4rE" collectionClass="NSMutableArray" id="xZo-4x-0fl"/>
+                        <outletCollection property="xylophoneKeys" destination="QG2-EG-XmS" collectionClass="NSMutableArray" id="ETC-4O-lgp"/>
+                        <outletCollection property="xylophoneKeys" destination="jAj-d0-19d" collectionClass="NSMutableArray" id="1Tp-wo-uw5"/>
+                        <outletCollection property="xylophoneKeys" destination="AXG-hm-s2J" collectionClass="NSMutableArray" id="Y0e-mr-zoL"/>
+                        <outletCollection property="xylophoneKeys" destination="4YE-I3-mym" collectionClass="NSMutableArray" id="qS8-0I-D3d"/>
+                        <outletCollection property="xylophoneKeys" destination="0nu-A8-mkT" collectionClass="NSMutableArray" id="Grb-yI-BTd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="NRS-ih-LwH"/>
             </objects>
             <point key="canvasLocation" x="162" y="366"/>
         </scene>
