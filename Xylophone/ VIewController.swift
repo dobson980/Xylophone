@@ -31,7 +31,7 @@ class ViewController: UIViewController{
     @IBAction func notePressed(_ sender: UIButton) {
 
         xylophonePlayers[sender.tag - 1].play()
-        print("played sound for \(sender.tag)")
+        print("Played sound for \(sender.tag)")
 
     }
     

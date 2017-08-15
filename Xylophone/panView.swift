@@ -20,7 +20,7 @@ extension ViewController {
             if key.frame.contains(touchPoint) {
                 
                 if key.tag != Int(lastActiveKey) {
-                    print("playSound")
+                    print("panPlayed sound for \(key.tag)")
                     xylophonePlayers[key.tag - 1].play()
                     lastActiveKey = "\(key.tag)"
                 }
