@@ -10,6 +10,7 @@
 		357288631F3EA94400C071AD /* XylophonePlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 357288621F3EA94400C071AD /* XylophonePlayer.swift */; };
 		357288651F3EAE2800C071AD /* xylophone.swift in Sources */ = {isa = PBXBuildFile; fileRef = 357288641F3EAE2800C071AD /* xylophone.swift */; };
 		357F70BE1F3F5E1200E0264C /* panView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 357F70BD1F3F5E1200E0264C /* panView.swift */; };
+		35AEBAFD1F48085800FD000A /* roundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AEBAFC1F48085800FD000A /* roundedButton.swift */; };
 		63C019C91C58DF76001F4187 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C019C81C58DF76001F4187 /* AppDelegate.swift */; };
 		63C019CB1C58DF76001F4187 /*  VIewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C019CA1C58DF76001F4187 /*  VIewController.swift */; };
 		63C019CE1C58DF76001F4187 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63C019CC1C58DF76001F4187 /* Main.storyboard */; };
@@ -28,6 +29,7 @@
 		357288621F3EA94400C071AD /* XylophonePlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XylophonePlayer.swift; sourceTree = "<group>"; };
 		357288641F3EAE2800C071AD /* xylophone.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = xylophone.swift; sourceTree = "<group>"; };
 		357F70BD1F3F5E1200E0264C /* panView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = panView.swift; sourceTree = "<group>"; };
+		35AEBAFC1F48085800FD000A /* roundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = roundedButton.swift; sourceTree = "<group>"; };
 		63C019C51C58DF76001F4187 /* Xylophone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Xylophone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63C019C81C58DF76001F4187 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		63C019CA1C58DF76001F4187 /*  VIewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = " VIewController.swift"; sourceTree = "<group>"; };
@@ -55,6 +57,45 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		35C9D0BE1F48024400DB014D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				357288641F3EAE2800C071AD /* xylophone.swift */,
+				357288621F3EA94400C071AD /* XylophonePlayer.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		35C9D0BF1F48025500DB014D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				63C019CC1C58DF76001F4187 /* Main.storyboard */,
+				63C019CF1C58DF76001F4187 /* Assets.xcassets */,
+				35AEBAFC1F48085800FD000A /* roundedButton.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		35C9D0C01F48026100DB014D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				63C019CA1C58DF76001F4187 /*  VIewController.swift */,
+				357F70BD1F3F5E1200E0264C /* panView.swift */,
+				63C019C81C58DF76001F4187 /* AppDelegate.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		35C9D0C11F48070900DB014D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				63C019D11C58DF76001F4187 /* LaunchScreen.storyboard */,
+				63C019D41C58DF76001F4187 /* Info.plist */,
+				6385B12D1C68C76C00E57640 /* Sound Files */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		6385B12D1C68C76C00E57640 /* Sound Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -88,16 +129,10 @@
 		63C019C71C58DF76001F4187 /* Xylophone */ = {
 			isa = PBXGroup;
 			children = (
-				63C019C81C58DF76001F4187 /* AppDelegate.swift */,
-				63C019CA1C58DF76001F4187 /*  VIewController.swift */,
-				357F70BD1F3F5E1200E0264C /* panView.swift */,
-				357288641F3EAE2800C071AD /* xylophone.swift */,
-				357288621F3EA94400C071AD /* XylophonePlayer.swift */,
-				63C019CC1C58DF76001F4187 /* Main.storyboard */,
-				63C019CF1C58DF76001F4187 /* Assets.xcassets */,
-				63C019D11C58DF76001F4187 /* LaunchScreen.storyboard */,
-				63C019D41C58DF76001F4187 /* Info.plist */,
-				6385B12D1C68C76C00E57640 /* Sound Files */,
+				35C9D0C01F48026100DB014D /* Controller */,
+				35C9D0BF1F48025500DB014D /* View */,
+				35C9D0BE1F48024400DB014D /* Model */,
+				35C9D0C11F48070900DB014D /* Supporting Files */,
 			);
 			path = Xylophone;
 			sourceTree = "<group>";
@@ -187,6 +222,7 @@
 				63C019CB1C58DF76001F4187 /*  VIewController.swift in Sources */,
 				357288631F3EA94400C071AD /* XylophonePlayer.swift in Sources */,
 				63C019C91C58DF76001F4187 /* AppDelegate.swift in Sources */,
+				35AEBAFD1F48085800FD000A /* roundedButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

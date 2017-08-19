@@ -38,15 +38,14 @@ class XylophonePlayer {
     
     func play() {
         
-        if xylophonePlayer.isPlaying{
-            xylophonePlayer.stop()
+        if xylophonePlayer.isPlaying {
+            
             xylophonePlayer.currentTime = 0
             xylophonePlayer.play()
             
         }
-        
         xylophonePlayer.play()
-        
+
     }
 }
 

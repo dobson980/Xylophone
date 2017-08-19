@@ -20,6 +20,7 @@ class ViewController: UIViewController{
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        roundKeys()
         prepareKeySounds()
         
         let pan = UIPanGestureRecognizer(target: self, action: #selector(panOverKey))
@@ -48,6 +49,16 @@ class ViewController: UIViewController{
             xylophonePlayers[player].prepareSound()
             
         }
+    }
+    
+    func roundKeys() {
+        
+        for key in xylophoneKeys {
+            
+            key.roundButton(button: key)
+            
+        }
+        
     }
 
     
